@@ -1,0 +1,36 @@
+{
+  "name": "orchid/socket",
+  "description": "Simple WebSockets for Laravel",
+  "keywords": [
+    "framework",
+    "laravel",
+    "web",
+    "websocket",
+    "socket",
+    "php"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tabuna",
+      "email": "bliz48rus@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "laravel/framework": "5.1.*",
+    "cboden/ratchet": "^0.3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Orchid\\Socket\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "minimum-stability": "alpha",
+  "prefer-stable": true
+}
