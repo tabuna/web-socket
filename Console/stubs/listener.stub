@@ -1,8 +1,8 @@
-<?php namespace $CLASS_NAMESPACE$;
+<?php namespace DummyNamespace;
 
 use Orchid\Socket\BaseSocketListener;
 
-class $CLASS$ extends BaseSocketListener {
+class DummyClass extends BaseSocketListener {
 
  protected $clients;
 
