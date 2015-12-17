@@ -37,18 +37,17 @@ Socket Server for Laravel 5
 1. Create Socket Lister
 
 ```php
-
 // Create a new socket listener class
 php artisan make:socket MyNameClass
 
 //It will be created in the app/Socket/Listener
-
 ```
 
 1. add socket route
 
+```php
 You will define most of the routes for your application in the app/Socket/routes.php file
-
+```
 
 1. Start serve
 
