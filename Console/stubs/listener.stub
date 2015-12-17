@@ -1,6 +1,7 @@
 <?php namespace DummyNamespace;
 
 use Orchid\Socket\BaseSocketListener;
+use Ratchet\ConnectionInterface;
 
 class DummyClass extends BaseSocketListener {
 

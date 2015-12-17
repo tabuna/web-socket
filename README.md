@@ -25,28 +25,39 @@ Socket Server for Laravel 5
 	Orchid\Socket\Providers\SocketServiceProvider::class
 	```
 
-1. create settings table
+1. structure
 
 	```php
 	php artisan vendor:publish
 	```
 
+
 ## Usage
 
+1. Create Socket Lister
+
 ```php
-// start socket serve
-php artisan socket:serve
 
+// Create a new socket listener class
+php artisan make:socket MyNameClass
 
-// make listener
-php artisan make:socket
-
-
-
-Desc add Later...
-
+//It will be created in the app/Socket/Listener
 
 ```
+
+1. add socket route
+
+You will define most of the routes for your application in the app/Socket/routes.php file
+
+
+1. Start serve
+
+```php
+php artisan socket:serve
+```
+
+
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
