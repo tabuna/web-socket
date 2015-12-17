@@ -34,7 +34,7 @@ Socket Server for Laravel 5
 
 ## Usage
 
-1. Create Socket Lister
+1. create socket listener
 
 ```php
 // Create a new socket listener class
@@ -49,7 +49,7 @@ php artisan make:socket MyNameClass
 You will define most of the routes for your application in the app/Socket/routes.php file
 ```
 
-1. Start serve
+1. start socket server
 
 ```php
 php artisan socket:serve
