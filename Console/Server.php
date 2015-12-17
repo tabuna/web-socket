@@ -56,6 +56,7 @@ class Server extends Command
     {
         $this->url = Config::get('socket.url', 'localhost');
         $this->port = Config::get('socket.port', '8080');
+        parent::__construct();
     }
 
     /**
