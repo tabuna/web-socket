@@ -2,9 +2,9 @@
 Socket Server for Laravel 5 
 
 
-[![Latest Stable Version](https://poser.pugx.org/orchid/socket/v/stable)](https://packagist.org/packages/orchid/settings)
-[![Total Downloads](https://poser.pugx.org/orchid/socket/downloads)](https://packagist.org/packages/orchid/settings)
-[![License](https://poser.pugx.org/orchid/socket/license)](https://packagist.org/packages/orchid/settings)
+[![Latest Stable Version](https://poser.pugx.org/orchid/socket/v/stable)](https://packagist.org/packages/orchid/socket)
+[![Total Downloads](https://poser.pugx.org/orchid/socket/downloads)](https://packagist.org/packages/orchid/socket)
+[![License](https://poser.pugx.org/orchid/socket/license)](https://packagist.org/packages/orchid/socket)
 
 
 
