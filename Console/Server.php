@@ -32,19 +32,23 @@ class Server extends Command
 
 
     /**
-     * Url adress
-     *
-     * @var string
+     * $httpHost HTTP hostname clients intend to connect to.
+     * MUST match JS `new WebSocket('ws://$httpHost')
      */
-    protected $url;
+    protected $httpHost;
 
 
     /**
-     * Socket Port
-     *
-     * @var number
+     * Port to listen on. If 80, assuming production,
+     * Flash on 843 otherwise expecting Flash to be proxied through 8843
      */
     protected $port;
+
+    /**
+     *IP address to bind to. Default is localhost/proxy only.
+     *'0.0.0.0' for any machine.
+     */
+    protected $address;
 
 
     /**
@@ -54,8 +58,9 @@ class Server extends Command
      */
     public function __construct()
     {
-        $this->url = Config::get('socket.url', 'localhost');
-        $this->port = Config::get('socket.port', '8080');
+        $this->httpHost = Config::get('socket.httpHost');
+        $this->port = Config::get('socket.port');
+        $this->address = Config::get('socket.address');
         parent::__construct();
     }
 
@@ -66,9 +71,9 @@ class Server extends Command
      */
     public function fire()
     {
-        $socket = new Socket($this->url, $this->port);
+        $socket = new Socket($this->httpHost, $this->port, $this->address);
         require_once(app_path() . '/Socket/routes.php');
-        $this->info('Laravel web socket server started on ' . $this->url . ':' . $this->port . '/');
+        $this->info('Laravel web socket server started on ' . $this->url . ':' . $this->port . '/' . 'address:' . $this->address);
         $socket->run();
     }
 
