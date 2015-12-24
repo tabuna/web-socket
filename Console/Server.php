@@ -58,9 +58,10 @@ class Server extends Command
      */
     public function __construct()
     {
-        $this->httpHost = Config::get('socket.httpHost');
-        $this->port = Config::get('socket.port');
-        $this->address = Config::get('socket.address');
+        $config = Config::get('socket');
+        $this->httpHost = $config['httpHost'];
+        $this->port = $config['port'];
+        $this->address = $config['address'];
         parent::__construct();
     }
 
@@ -73,7 +74,7 @@ class Server extends Command
     {
         $socket = new Socket($this->httpHost, $this->port, $this->address);
         require_once(app_path() . '/Socket/routes.php');
-        $this->info('Laravel web socket server started on ' . $this->url . ':' . $this->port . '/' . 'address:' . $this->address);
+        $this->info('Laravel web socket server started on ' . $this->httpHost . ':' . $this->port . '/' . 'address:' . $this->address);
         $socket->run();
     }
 
