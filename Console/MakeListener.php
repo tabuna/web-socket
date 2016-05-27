@@ -1,7 +1,6 @@
 <?php namespace Orchid\Socket\Console;
 
 use Illuminate\Console\GeneratorCommand;
-use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 
 class MakeListener extends GeneratorCommand

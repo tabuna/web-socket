@@ -60,7 +60,7 @@ class Server extends Command
     public function fire()
     {
         $socket = new Socket($this->httpHost, $this->port, $this->address);
-        require_once app_path() . '/Socket/routes.php';
+        require_once app_path() . '/Http/Socket/routes.php';
         $this->info('Laravel web socket server started on ' . $this->httpHost . ':' . $this->port . '/' . 'address:' . $this->address);
         $socket->run();
     }
