@@ -46,7 +46,7 @@ php artisan make:socket MyNameClass
 1. add socket route
 
 ```php
-You will define most of the routes for your application in the app/Socket/routes.php file
+You will define most of the routes for your application in the app/Http/Socket/routes.php file
 ```
 
 1. start socket server

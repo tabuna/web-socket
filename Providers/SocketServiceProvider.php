@@ -33,16 +33,17 @@ class SocketServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../Config/socket.php' => config_path('socket.php'),
-            __DIR__ . '/../routes.php' => app_path('/Socket/routes.php'),
+            __DIR__ . '/../Services/Socket/routes.php' => app_path('/Http/Socket/routes.php'),
         ]);
         $this->mergeConfigFrom(
             __DIR__ . '/../Config/socket.php', 'socket'
         );
     }
 
+
     public function registerProviders()
     {
-        $this->app->register('Orchid\\Socket\\Providers\\ConsoleServiceProvider');
+        //   $this->app->register('Orchid\\Socket\\Providers\\ConsoleServiceProvider');
     }
 
     /**

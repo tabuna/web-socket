@@ -1,6 +1,7 @@
 <?php namespace Orchid\Socket\Console;
 
 use Illuminate\Console\GeneratorCommand;
+use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 
 class MakeListener extends GeneratorCommand
@@ -39,13 +40,12 @@ class MakeListener extends GeneratorCommand
     /**
      * Get the default namespace for the class.
      *
-     * @param  string $rootNamespace
+     * @param string $rootNamespace
+     *
      * @return string
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Socket\Listener';
+        return $rootNamespace . '\Http\Socket\Listener';
     }
-
-
 }
