@@ -1,5 +1,5 @@
-# socket
-Socket Server for Laravel 5 
+# Socket
+WebSocket Server for Laravel 5 
 
 
 [![Latest Stable Version](https://poser.pugx.org/orchid/socket/v/stable)](https://packagist.org/packages/orchid/socket)
