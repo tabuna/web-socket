@@ -33,7 +33,7 @@ class SocketServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../Config/socket.php' => config_path('socket.php'),
-            __DIR__ . '/../routes.php' => app_path('/Http/Socket/routes.php'),
+            __DIR__ . '/../socket.php' => app_path('routes/socket.php'),
         ]);
         $this->mergeConfigFrom(
             __DIR__ . '/../Config/socket.php', 'socket'
