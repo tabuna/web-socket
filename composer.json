@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Orchid\\Socket\\": ""
+      "Orchid\\Socket\\": "src/"
     }
   },
   "extra": {
