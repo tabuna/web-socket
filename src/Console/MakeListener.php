@@ -45,6 +45,6 @@ class MakeListener extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Http\Socket\Listener';
+        return $rootNamespace . '\Http\Sockets';
     }
 }
