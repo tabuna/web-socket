@@ -7,7 +7,7 @@
 
 
 <p align="center">
-	WebSocket Server for Laravel 5 
+Laravel  library for asynchronously serving WebSockets. <br> Build up your application through simple interfaces and re-use your application without changing any of its code just by combining different components.
 </p>
 
 <p align="center">
