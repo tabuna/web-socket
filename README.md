@@ -1,5 +1,31 @@
+<p align="center">
+<a href="https://github.com/TheOrchid/Platform"><img width="120" height="120"  src="https://cloud.githubusercontent.com/assets/5102591/22400392/7027abde-e5c4-11e6-8548-81e0197ee333.png">
+</a>
+</p>
+
+
+
+
+<p align="center">
+	WebSocket Server for Laravel 5 
+</p>
+
+<p align="center">
+
+
+
+<a href="https://packagist.org/packages/orchid/socket"><img src="https://poser.pugx.org/orchid/socket/v/stable"/></a>
+
+<a href="https://packagist.org/packages/orchid/socket"><img src="https://poser.pugx.org/orchid/socket/downloads"/></a>
+
+<a href="https://packagist.org/packages/orchid/socket"><img src="https://poser.pugx.org/orchid/socket/license"/></a>
+
+
+</p>
+
+
+
 # Socket
-WebSocket Server for Laravel 5 
 
 Socket - full-duplex communication protocol over the TCP-connection for exchanging messages between the browser and web server in real time.
 
@@ -7,9 +33,6 @@ WebSocket is designed to implement in the web-browser and web-server, but it can
 
 Protocol WebSocket - an independent protocol based on the TCP protocol. It enables greater interaction between the browser and the web site, promoting the dissemination of interactive content and the creation of real-time games.
 
-[![Latest Stable Version](https://poser.pugx.org/orchid/socket/v/stable)](https://packagist.org/packages/orchid/socket)
-[![Total Downloads](https://poser.pugx.org/orchid/socket/downloads)](https://packagist.org/packages/orchid/socket)
-[![License](https://poser.pugx.org/orchid/socket/license)](https://packagist.org/packages/orchid/socket)
 
 
 
