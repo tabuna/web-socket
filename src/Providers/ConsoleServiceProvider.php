@@ -1,4 +1,6 @@
-<?php namespace Orchid\Socket\Providers;
+<?php
+
+namespace Orchid\Socket\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -25,7 +27,7 @@ class ConsoleServiceProvider extends ServiceProvider
      */
     protected $commands = [
         'Server',
-        'MakeListener'
+        'MakeListener',
     ];
 
     /**
@@ -34,7 +36,7 @@ class ConsoleServiceProvider extends ServiceProvider
     public function register()
     {
         foreach ($this->commands as $command) {
-            $this->commands($this->namespace . $command);
+            $this->commands($this->namespace.$command);
         }
     }
 
@@ -46,7 +48,7 @@ class ConsoleServiceProvider extends ServiceProvider
         $provides = [];
 
         foreach ($this->commands as $command) {
-            $provides[] = $this->namespace . $command;
+            $provides[] = $this->namespace.$command;
         }
 
         return $provides;

@@ -1,4 +1,5 @@
 <?php
+
 namespace Orchid\Socket;
 
 use Ratchet\ConnectionInterface;
@@ -6,7 +7,6 @@ use Ratchet\MessageComponentInterface;
 
 class BaseSocketListener implements MessageComponentInterface
 {
-
     public function onOpen(ConnectionInterface $conn)
     {
     }

@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  *  Routes for WebSocket
  *
  * Add route (Symfony Routing Component)

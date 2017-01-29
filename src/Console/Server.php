@@ -61,7 +61,7 @@ class Server extends Command
     {
         $socket = new Socket($this->httpHost, $this->port, $this->address);
         require base_path('routes/socket.php');
-        $this->info('Laravel web socket server started on ' . $this->httpHost . ':' . $this->port . '/' . 'address:' . $this->address);
+        $this->info('Laravel web socket server started on '.$this->httpHost.':'.$this->port.'/'.'address:'.$this->address);
         $socket->run();
     }
 }
