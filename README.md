@@ -15,7 +15,7 @@ Laravel  library for asynchronously serving WebSockets. <br> Build up your appli
 
 
 
-<a href="https://insight.sensiolabs.com/projects/044d975d-c934-4d2a-9fb0-ffdf065db545"><img src="https://insight.sensiolabs.com/projects/044d975d-c934-4d2a-9fb0-ffdf065db545/mini.png"/></a>
+<a href="https://insight.sensiolabs.com/projects/044d975d-c934-4d2a-9fb0-ffdf065db545"><img src="https://insight.sensiolabs.com/projects/044d975d-c934-4d2a-9fb0-ffdf065db545/mini.png?2"/></a>
 
 
 <a href="https://styleci.io/repos/48105071"><img src="https://styleci.io/repos/48105071/shield?branch=master"/></a>
