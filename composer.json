@@ -1,6 +1,6 @@
 {
   "name": "orchid/socket",
-  "description": "Simple WebSockets for Laravel",
+  "description": "Laravel library for asynchronously serving WebSockets. ",
   "keywords": [
     "framework",
     "laravel",
