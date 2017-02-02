@@ -1,13 +1,15 @@
-<?php namespace DummyNamespace;
+<?php
+
+namespace DummyNamespace;
 
 use Orchid\Socket\BaseSocketListener;
 use Ratchet\ConnectionInterface;
 
 class DummyClass extends BaseSocketListener
 {
-
     /**
-     * Current clients
+     * Current clients.
+     *
      * @var \SplObjectStorage
      */
     protected $clients;
@@ -17,7 +19,7 @@ class DummyClass extends BaseSocketListener
      */
     public function __construct()
     {
-        $this->clients = new \SplObjectStorage;
+        $this->clients = new \SplObjectStorage();
     }
 
     /**
@@ -51,11 +53,10 @@ class DummyClass extends BaseSocketListener
 
     /**
      * @param ConnectionInterface $conn
-     * @param \Exception $e
+     * @param \Exception          $e
      */
     public function onError(ConnectionInterface $conn, \Exception $e)
     {
         $conn->close();
     }
-
 }
