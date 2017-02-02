@@ -2,7 +2,6 @@
 
 namespace Orchid\Socket\Console;
 
-use Config;
 use Illuminate\Console\Command;
 use Ratchet\App as Socket;
 
@@ -45,7 +44,7 @@ class Server extends Command
      */
     public function __construct()
     {
-        $config = Config::get('socket');
+        $config = config('socket');
         $this->httpHost = $config['httpHost'];
         $this->port = $config['port'];
         $this->address = $config['address'];

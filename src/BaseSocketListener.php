@@ -5,21 +5,13 @@ namespace Orchid\Socket;
 use Ratchet\ConnectionInterface;
 use Ratchet\MessageComponentInterface;
 
-class BaseSocketListener implements MessageComponentInterface
+abstract class BaseSocketListener implements MessageComponentInterface
 {
-    public function onOpen(ConnectionInterface $conn)
-    {
-    }
+    abstract public function onOpen(ConnectionInterface $conn);
 
-    public function onMessage(ConnectionInterface $from, $msg)
-    {
-    }
+    abstract public function onMessage(ConnectionInterface $from, $msg);
 
-    public function onClose(ConnectionInterface $conn)
-    {
-    }
+    abstract public function onClose(ConnectionInterface $conn);
 
-    public function onError(ConnectionInterface $conn, \Exception $e)
-    {
-    }
+    abstract public function onError(ConnectionInterface $conn, \Exception $e);
 }
