@@ -11,23 +11,11 @@ Laravel  library for asynchronously serving WebSockets. <br> Build up your appli
 </p>
 
 <p align="center">
-
-
-
-
 <a href="https://insight.sensiolabs.com/projects/044d975d-c934-4d2a-9fb0-ffdf065db545"><img src="https://insight.sensiolabs.com/projects/044d975d-c934-4d2a-9fb0-ffdf065db545/mini.png?2"/></a>
-
-
 <a href="https://styleci.io/repos/48105071"><img src="https://styleci.io/repos/48105071/shield?branch=master"/></a>
-
 <a href="https://packagist.org/packages/orchid/socket"><img src="https://poser.pugx.org/orchid/socket/v/stable"/></a>
-
 <a href="https://packagist.org/packages/orchid/socket"><img src="https://poser.pugx.org/orchid/socket/downloads"/></a>
-
 <a href="https://packagist.org/packages/orchid/socket"><img src="https://poser.pugx.org/orchid/socket/license"/></a>
-
-
-
 </p>
 
 
