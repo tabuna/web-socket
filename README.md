@@ -82,7 +82,8 @@ php artisan socket:serve
 
 
 
-####JavaScript
+#### JavaScript
+
 Connecting Web socket in JavaScript
 
 ```javascript
@@ -119,7 +120,8 @@ socket.send("Hello");
 
 
 
-####Authorization
+#### Authorization
+
 Example of installation numbers unique socket and session laravel
 ```php
 
@@ -166,7 +168,7 @@ public function getUserFromSession($conn)
 ```
 
 
-####Nginx proxy
+#### Nginx proxy
 
 ```
 
@@ -198,7 +200,7 @@ public function getUserFromSession($conn)
 ```
 
 
-####Supervisor
+#### Supervisor
 
 ```
 [program:laravel-socket]
