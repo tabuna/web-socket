@@ -34,25 +34,23 @@ Protocol WebSocket - an independent protocol based on the TCP protocol. It enabl
 
 ## Installation
 
-1. install package
+install package
 
-	```php
-    composer require orchid/socket
-	```
+```php
+$ composer require orchid/socket
+```
 
-1. edit config/app.php
+edit config/app.php service provider :
 
-	service provider :
+```php
+Orchid\Socket\Providers\SocketServiceProvider::class
+```
 
-	```php
-	Orchid\Socket\Providers\SocketServiceProvider::class
-	```
+structure
 
-1. structure
-
-	```php
-	php artisan vendor:publish
-	```
+```php
+php artisan vendor:publish
+```
 
 
 ## Usage
@@ -170,8 +168,7 @@ public function getUserFromSession($conn)
 
 #### Nginx proxy
 
-```
-
+```nginx
     map $http_upgrade $connection_upgrade {
         default upgrade;
         '' close;
@@ -202,7 +199,7 @@ public function getUserFromSession($conn)
 
 #### Supervisor
 
-```
+```bash
 [program:laravel-socket]
 process_name=%(program_name)s_%(process_num)02d
 command=php /var/www/your-path/artisan socket:serve
