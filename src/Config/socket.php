@@ -1,7 +1,7 @@
 <?php
 
 return [
-    
+
     /*
      * $httpHost HTTP hostname clients intend to connect to.
      * MUST match JS `new WebSocket('ws://$httpHost')`.
@@ -18,7 +18,7 @@ return [
      * Public port for Nginx
      */
     'public_port' => env('SOCKET_PUBLIC_PORT', '443'),
-    
+
     /*
      * IP address to bind to. Default is localhost/proxy only.
      * `0.0.0.0` for any machine.
