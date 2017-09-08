@@ -27,10 +27,11 @@
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
-    }
+      "laravel": {
+          "providers": [
+              "Orchid\\Socket\\Providers\\SocketServiceProvider"
+          ]
+      }
   },
-  "minimum-stability": "alpha",
   "prefer-stable": true
 }
