@@ -56,7 +56,7 @@ class Server extends Command
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         $socket = new Socket($this->httpHost, $this->port, $this->address);
         require base_path('routes/socket.php');
