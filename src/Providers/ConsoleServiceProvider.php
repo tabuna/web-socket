@@ -36,7 +36,7 @@ class ConsoleServiceProvider extends ServiceProvider
     public function register()
     {
         foreach ($this->commands as $command) {
-            $this->commands($this->namespace . $command);
+            $this->commands($this->namespace.$command);
         }
     }
 
@@ -48,7 +48,7 @@ class ConsoleServiceProvider extends ServiceProvider
         $provides = [];
 
         foreach ($this->commands as $command) {
-            $provides[] = $this->namespace . $command;
+            $provides[] = $this->namespace.$command;
         }
 
         return $provides;
