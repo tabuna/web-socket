@@ -32,11 +32,11 @@ class SocketServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            realpath(__DIR__ . '/../Config/socket.php') => config_path('socket.php'),
-            realpath(__DIR__ . '/../socket.php')        => base_path('routes/socket.php'),
+            realpath(__DIR__.'/../Config/socket.php') => config_path('socket.php'),
+            realpath(__DIR__.'/../socket.php')        => base_path('routes/socket.php'),
         ]);
         $this->mergeConfigFrom(
-            realpath(__DIR__ . '/../Config/socket.php'), 'socket'
+            realpath(__DIR__.'/../Config/socket.php'), 'socket'
         );
     }
 
