@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "cboden/ratchet": "^0.3"
+    "cboden/ratchet": "^0.4"
   },
   "autoload": {
     "psr-4": {
