@@ -41,7 +41,7 @@ install package
 $ composer require orchid/socket
 ```
 
-edit config/app.php service provider :
+edit config/app.php service provider : (Laravel < 5.5)
 
 ```php
 Orchid\Socket\Providers\SocketServiceProvider::class
