@@ -34,7 +34,7 @@ class MakeListener extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/stubs/listener.stub';
+        return __DIR__ . '/stubs/listener.stub';
     }
 
     /**
@@ -46,6 +46,6 @@ class MakeListener extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Http\Sockets';
+        return $rootNamespace . '\Http\Sockets';
     }
 }

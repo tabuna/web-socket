@@ -32,26 +32,17 @@ class SocketServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/socket.php' => config_path('socket.php'),
-            __DIR__.'/../socket.php'        => base_path('routes/socket.php'),
+            realpath(__DIR__ . '/../Config/socket.php') => config_path('socket.php'),
+            realpath(__DIR__ . '/../socket.php')        => base_path('routes/socket.php'),
         ]);
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/socket.php', 'socket'
+            realpath(__DIR__ . '/../Config/socket.php'), 'socket'
         );
     }
 
     public function registerProviders()
     {
         $this->app->register('Orchid\\Socket\\Providers\\ConsoleServiceProvider');
-    }
-
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
-    public function register()
-    {
     }
 
     /**
