@@ -60,7 +60,7 @@ php artisan vendor:publish
 	
 To create a new listener, you need to	
 ```php
-php artisan make:socket MyNameClass
+php artisan make:socket MyClass
 ```
 
 In the folder `app/HTTP/Socket/Listener` create template Web listener socket
