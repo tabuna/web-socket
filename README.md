@@ -143,6 +143,11 @@ public function getUserFromSession($conn)
     // Create a new session handler for this client
     $session = (new SessionManager(App::getInstance()))->driver();
     
+    // fix issue https://github.com/laravel/framework/issues/24364
+    if (Config::get('session.driver') == 'file') {	
+	clearstatcache();
+    }
+    
     // Get the cookies
     $cookies = $conn->WebSocket->request->getCookies();
     
