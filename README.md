@@ -3,9 +3,6 @@
 </a>
 </p>
 
-
-
-
 <p align="center">
 Laravel  library for asynchronously serving WebSockets. <br> Build up your application through simple interfaces and re-use your application without changing any of its code just by combining different components.
 </p>
@@ -56,7 +53,7 @@ php artisan vendor:publish
 
 ## Usage
 
-### Creature :
+### Create socket listener:
 	
 To create a new listener, you need to	
 ```php
@@ -191,12 +188,10 @@ public function getUserFromSession($conn)
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection $connection_upgrade;
-
-
-                proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                proxy_set_header X-Forwarded-Proto https;
+	    proxy_set_header Host $host;
+	    proxy_set_header X-Real-IP $remote_addr;
+	    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	    proxy_set_header X-Forwarded-Proto https;
             proxy_redirect off;
         }
     }
