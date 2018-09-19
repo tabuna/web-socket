@@ -18,18 +18,6 @@ Laravel  library for asynchronously serving WebSockets. <br> Build up your appli
 
 
 
-# Laravel WebSocket
-
-Socket - full-duplex communication protocol over the TCP-connection for exchanging messages between the browser and web server in real time.
-
-WebSocket is designed to implement in the web-browser and web-server, but it can be used for any client or server application.
-
-Protocol WebSocket - an independent protocol based on the TCP protocol. It enables greater interaction between the browser and the web site, promoting the dissemination of interactive content and the creation of real-time games.
-
-
-
-
-
 ## Installation Laravel WebSocket
 
 install package
