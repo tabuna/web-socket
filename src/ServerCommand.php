@@ -1,11 +1,13 @@
 <?php
 
-namespace Orchid\Socket\Console;
+declare(strict_types=1);
+
+namespace Orchid\Socket;
 
 use Illuminate\Console\Command;
 use Ratchet\App as Socket;
 
-class Server extends Command
+class ServerCommand extends Command
 {
     /**
      * The console command name.
@@ -44,10 +46,10 @@ class Server extends Command
      */
     public function __construct()
     {
-        $config = config('socket');
-        $this->httpHost = $config['httpHost'];
-        $this->port = $config['port'];
-        $this->address = $config['address'];
+        foreach (config('socket', []) as $property => $value) {
+            $this->$property = $value;
+        }
+
         parent::__construct();
     }
 

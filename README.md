@@ -29,7 +29,7 @@ $ composer require orchid/socket
 edit config/app.php service provider : (Laravel < 5.5)
 
 ```php
-Orchid\Socket\Providers\SocketServiceProvider::class
+Orchid\Socket\SocketServiceProvider::class
 ```
 
 structure
@@ -48,7 +48,7 @@ To create a new listener, you need to
 php artisan make:socket MyClass
 ```
 
-In the folder `app/HTTP/Socket/Listener` create template Web listener socket
+In the folder `app/Http/Sockets` create template Web listener socket
 
 After creating a need to establish a route which Is located `routes/socket.php`
 

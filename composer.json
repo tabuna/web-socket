@@ -8,17 +8,20 @@
     "websocket",
     "socket",
     "php",
-    "server"
+    "server",
+    "ratchet"
   ],
   "license": "MIT",
   "authors": [
     {
       "name": "tabuna",
-      "email": "bliz48rus@gmail.com"
+      "email": "bliz48rus@gmail.com",
+      "homepage": "https://tabuna.github.io",
+      "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=5.5.9",
+    "php": "^7.1.3",
     "cboden/ratchet": "^0.4"
   },
   "autoload": {
@@ -29,7 +32,7 @@
   "extra": {
       "laravel": {
           "providers": [
-              "Orchid\\Socket\\Providers\\SocketServiceProvider"
+              "Orchid\\Socket\\SocketServiceProvider"
           ]
       }
   },

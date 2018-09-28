@@ -1,10 +1,12 @@
 <?php
 
-namespace Orchid\Socket\Console;
+declare(strict_types=1);
+
+namespace Orchid\Socket;
 
 use Illuminate\Console\GeneratorCommand;
 
-class MakeListener extends GeneratorCommand
+class SocketCommand extends GeneratorCommand
 {
     /**
      * The console command name.
@@ -34,7 +36,7 @@ class MakeListener extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/stubs/listener.stub';
+        return __DIR__ . '/../stubs/listener.stub';
     }
 
     /**
