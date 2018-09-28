@@ -31,11 +31,11 @@ class SocketServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            dirname(__DIR__) . '/config/socket.php' => config_path('socket.php'),
-            dirname(__DIR__) . '/stubs/socket.php'  => base_path('routes/socket.php'),
+            dirname(__DIR__).'/config/socket.php' => config_path('socket.php'),
+            dirname(__DIR__).'/stubs/socket.php'  => base_path('routes/socket.php'),
         ]);
         $this->mergeConfigFrom(
-            dirname(__DIR__) . '/config/socket.php', 'socket'
+            dirname(__DIR__).'/config/socket.php', 'socket'
         );
     }
 
