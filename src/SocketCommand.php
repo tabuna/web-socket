@@ -36,7 +36,7 @@ class SocketCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/listener.stub';
+        return __DIR__.'/../stubs/listener.stub';
     }
 
     /**
