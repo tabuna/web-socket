@@ -1,3 +1,10 @@
+# Warning this repository is no longer supported
+
+### If you are looking for a good way to use laravel's web socket please look: https://github.com/beyondcode/laravel-websockets
+
+----
+
+
 <p align="center">
 <a href="https://github.com/TheOrchid/Platform"><img height="120"  src="https://cloud.githubusercontent.com/assets/5102591/22400427/ecfae2ce-e5c5-11e6-8430-16eef73c01a5.png">
 </a>
